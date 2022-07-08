@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Level3</title>
+        <title>Level 3</title>
     </head>
     <body>
-        <h1 style="color:green">Green colored heading1 not a header</h1>
-        <h1 style="text-align:center;color: blueviolet;">BlueViolet color'ed, center text-aligned header1</h1>
-        
+        <!--
+             1.Text Formatting Tags  
+                (i vs em) (b vs strong) small
+             2.Time for some styling  
+                <tagname style="property1:value1; property2:value2"></tagname>
+             3.Changing Text Color
+                <texttagname style="color:violet"></texttagname>
+             4.Playing with Text Size
+                DEFAULT FONT SIZE IS 16px=1em
+                <texttagname style="font-size:20px"></texttagname>
+             5.Text Alignment
+                <texttagname style="text-align:center"></texttagname>
+             6.New Fonts for your Text
+                TIMES NEW ROMAN is the DEFAULT FONT
+                ***Generic Font Families***
+                In CSS there are five generic font families:
+                i. Serif fonts 
+                    - have a small stroke at the edges of each letter. 
+                    - They create a sense of formality and elegance.
+                ii. Sans-serif fonts 
+                    - have clean lines (no small strokes attached). 
+                    - They create a modern and minimalistic look.
+                        Note: On computer screens, sans-serif fonts are 
+                        considered easier to read than serif fonts.
+                iii.Monospace fonts 
+                    - here all the letters have the same fixed width. 
+                    - They create a mechanical look. 
+                iv.Cursive fonts 
+                    - imitate human handwriting.
+                v.Fantasy fonts 
+                    - are decorative/playful fonts.
+                All the different font names belong to one of the generic font families. 
+             7.Changing Background Color
+             8.A Little More
+        -->
+        <h1>1.Text Formatting Tags</h1>
+        <small>small</small> text <br>  <strong>strong</strong> text <br><em>em</em> text <br>text <sup>sup</sup> text <br>text <sub>sub</sub> text <br><i>i</i> text <br><b>b</b> text
+        <h1> 2.Time for some styling & 3.Changing Text Color</h1>
+        <p style="color:green">Green colored paragraph NOTE:heading1 is not a header</p>
+        <h1>4.Playing with Text Size</h1>
+        <p style="font-size: 50px;"> font size is 50px here inside this p tag</p>
+        <h1>5.Text Alignment</h1>
+        <p style="text-align:justify;color: rebeccapurple;">rebeccapurple color'ed, justify text-aligned p</p>
+        <p style="text-align:center;color: blueviolet;">BlueViolet color'ed, center text-aligned p</p>
+        <p style="text-align:right;color: seagreen;">seagreen color'ed, right text-aligned p</p>
+        <h1>6.New Fonts for your Text</h1>
+        <p style="font-size:30px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"> 
+            Fallback Fonts-> The first WebSafe font in this following list will get loaded 
+            <br>'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif in font-size:30px;
+        </p>
+        <p style="font-size:30px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> 
+            Fallback Fonts-> The first WebSafe font in this following list will get loaded 
+            <br>Cambria, Cochin, Georgia, Times, 'Times New Roman', serif in font-size:30px;
+        </p>
+        <h1>7.Changing Background Color</h1>
+        <p style="background-color:turquoise"> background-color is turquoise here inside this p tag</p>
+        Do you know?
+        <hr>
+		<p style="background-color:turquoise">Human thigh bones are stronger than concrete.</p>
+		<p style="background-color:pink">Earth is the only planet not named after a god.</p>
+
+        <hr>
+
+        <h1>8. A Little More...</h1> CSS is a vast sea with a lot of properties available to style HTML Tags. Go on and explore it.
     </body>
 </html>
