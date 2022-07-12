@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS fonts</title>
+	<style>
+        /*
+            Handling text overflow (text-overflow):
+                text-overflow: clip | ellipsis | string | initial | inherit;
+                ***NOTE** works only when accompanied by ATTRIBUTE overflow:auto|hidden|scroll|visible etc.. 
+
+
+                We have successfully covered all these things:
+
+                        change font-family
+                        change font-style
+                        change font-size
+                        change font-weight
+                        add letter-spacing/ word-spacing
+                        align text
+                        decorate text
+                        handle overflowed text
+        */
+		h1{
+			/* Add CSS property text-overflow: clip; here*/
+			width: 140px; 
+			white-space: nowrap; 
+			color: purple;
+			border: 2px solid purple;
+            text-overflow: clip;
+            overflow:auto;
+           
+		}
+		p{
+			/* Add CSS proeprty text-overflow: ellipsis; here*/
+			white-space: nowrap; 
+			width: 400px; 
+			color: blue;
+			border: 2px solid blue;
+			text-overflow: ellipsis;
+            overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<h1>Studytonight</h1>
+	<p>In a world where so much is being done for technology and so little for the environment, education is not even a part of most discussions.We at Studytonight believe that by widening the reach of education, by making it freely available, so much can be achieved.</p>
+</body>
+</html>

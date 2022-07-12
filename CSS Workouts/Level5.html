@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Height and Width</title>
+	<style>
+       /* 
+            height: auto | length | percentage | initial | inherit;
+            width: auto | length | percentage | initial | inherit;
+         
+        Margin around Element
+            margin: value in px, em or % | inherit
+                margin: 10px;                   TRBL
+                margin: 20px 30px;              TB RL
+                margin: 10% 10px 10%;           T RL B
+                margin: 10em 20px 20px 10em;    T R B L
+        
+        Understanding Box Sizing
+            height + width + padding + border = actual length
+                box-sizing: content-box|border-box|initial|inherit;
+        */
+		div{
+			/* Add CSS property height and width here */
+			border: 2px solid #b8b5ff;
+			padding: 10px;
+			color: #7868e6;
+			font-size: 50px;
+            height:100px;
+			width:50%;
+            text-align: center;
+            
+		}
+        h1{
+            border:4px dashed #4535aa;
+			padding: 15px;
+			color: #7868e6;
+			font-size: 50px;
+            width: max-content;
+        }
+        /*
+           box-sizing: content-box(default)|border-box|initial|inherit
+            in {box-sizing: content-box} [adds up all measurements no limit]
+               => border + marginwidth + padding + width + padding + marginwidth + border = actual width;
+            in {box-sizing: border-box}  [adds up all measurements HAS limit <= WIDTH property of that selector]
+               => border + marginwidth + padding + width + padding + marginwidth + border <= width = actual width;
+
+            SUMMARY:
+                Content Box
+                Height and Width
+                Padding
+                Margin
+                Border
+                Box-sizing
+        
+        */        
+        #idborderbox
+        {
+            box-sizing:border-box;
+            border:4px dashed #aa8b35c7;
+            width:750px;
+            padding: 100px;
+            margin:25px;
+
+        }
+        #idcontentbox
+        {
+            box-sizing:content-box;
+            border:4px dashed #aa8b35c7;
+            width:750px;
+            padding:100px;
+            margin:25px;
+        }
+	</style>
+</head>
+<body>
+	<div>Welcome to Studytonight</div>
+    <h1>website</h1>
+    contentbox is as follows:
+    <p id="idcontentbox">box sizing test</p>
+    borderbox is as follows:
+    <p id="idborderbox">box sizing test</p>
+</body>
+</html>
