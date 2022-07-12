@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Letter and Word Spacing</title>
+	<style>
+		/*
+		6.Letter and Word Spacing
+            letter-spacing: normal | length | initial | inherit; 
+                            ***MARK FOR REVIEW***
+            word-spacing: normal | length | initial | inherit;
+        */
+       
+		h1{
+			/* Add CSS property here*/
+			letter-spacing:-5px;
+			text-align:center;
+		}
+		div{
+			/* Add CSS property here*/
+			word-spacing:10px;
+		} 
+        /*7.Text-Direction
+            text-direction: ltr | rtl;
+
+		*/
+        div.weird{
+			/* Add CSS here*/
+            direction:rtl;
+            unicode-bidi: bidi-override;
+		}
+        .notsoweird{
+			/* Add CSS property here*/
+			letter-spacing:-16px;
+            text-align: right;
+			    
+		}
+	</style>
+</head>
+<body>
+	<h1>Studytonight</h1>
+	<div>We at Studytonight believe that by widening the reach of education, by making it freely available, so much can be achieved.</div>
+    <!-- SEEMS OBSOLETE** but SEEMS ACCURATE maybe: text direction reversed using direction attribute and unicode-bidi attribute-->
+    <div class="weird">We at Studytonight believe that by widening the reach of education, by making it freely available, so much can be achieved.</div>
+    <!-- NOT SO ACCURATE text direction reversed using negative letter-spacing attribute and text-align attribute-->
+    <div class="notsoweird">We at Studytonight believe that by widening the reach of education, by making it freely available, so much can be achieved.</div>
+    <div style="text-align: right;">We at Studytonight believe that by widening the reach of education, by making it freely available, so much can be achieved.</div>
+</body>
+</html>

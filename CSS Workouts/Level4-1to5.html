@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Font Family</title>
+	<style>
+        /*Note: If you are providing multiple font types or a single font type, 
+        you should always provide a generic font family as the last font family value. 
+        There are 5 generic font-families: 
+            serif, 
+            sans-serif, 
+            monospace, 
+            cursive and 
+            fantasy.
+            example*** font-family:Arial, Helvetica, Sans-Seriff; *** 
+
+        CSS Font-Style:
+            normal
+            italic
+            oblique
+
+        Changing font-size:
+            ***MARK FOR REVIEW***
+            ***font-size: length | percentage | Size in Words | inherit;***
+                length      
+                    - absolute/relative - https://www.youtube.com/watch?v=799zrGVpfA8 - i
+                    - n em, px ,pt - refer https://www.w3.org/Style/Examples/007/units.en.html
+                        example: If we set the font-size of the text in the body as 1em and set 
+                        the font-size of the h1 heading text as 3em. Then no matter which device, 
+                        the browser will make sure that the heading text is always 3 times 
+                        the size of the body text.
+                percentage  - 
+                Size in Words-
+                inherit     -
+
+        Make fonts Bold(font-weight attribute):
+            absolute or relative
+                absolute
+                    values like normal=400 or bold=700  - font-weight:bold
+                    numbers like 100, 200 ,... or 900   - font-weight:900
+                relative
+                    bolder or lighter                   - font-weight:lighter
+                global values
+                    inherit
+
+
+        */
+        
+        h1{
+			/* Add CSS property here*/
+			font-family:Arial, Helvetica, sans-serif;
+		}
+		div{
+			/* Add CSS property here*/
+			font-family: fantasy;
+            font-style: oblique;
+		}
+        .bold{
+			/* Add CSS property here*/
+			font-weight:600;
+		}
+	</style>
+</head>
+<body>
+	<h1>Studytonight</h1>
+	<div>Welcome to Studytonight</div>
+    <p class="bold">This is a paragraph with CSS font-weight property.</p>
+	<p>This is a normal paragraph.</p>
+</body>
+</html>
