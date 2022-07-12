@@ -9,20 +9,48 @@
             specific HTML elements on the webpage for which 
             we want to set certain styling properties.
             4 types of selectors are
-            1. Universal Selector
-            2. Element Selector
-            3. Class Selector
-            4. Id Selector
+            1. Universal Selector - to be used for selecting all elements(any) present in the html document
+            2. Element Selector - to be used for selecting all elements(of same tag) present in the html document
+               ***NOTE*** Attribute Selector/Element Selector[attribute] - in case of an element which differs based on attribute
+                                                input type="text"
+                                                input type="checkbox"
+                                                input type="radio"
+            3. Class Selector - to be used for selecting many interested elements identified using a unique class name
+            4. Id Selector   - to be used for selecting one interested element identified using its unique id attribute value 
+
+            ***NOTE*** 
+            a. Attribute Selector
+            b. Grouping Selector - example
+                #heading,.para,p
+                {
+                    color: purple;
+                    text-align: center;
+                    font-family: cursive;
+                }
+            c. Pseudo-class Selector
+                <selector>:<pseudo-class> 
+                {
+	                //CSS property
+                }
+                ***note***
+                    :hover   - while hovering mouse over ANY ELEMENT 
+                    :visited - while a LINK is already visited
+                    :checked - while a selection item is checked in a CHECKBOX, dropdown(SELECT/OPTIONS) or RADIO
+                    :disabled- for any INPUT field which CONTAINS DISABLED ATTRIBUTE
+                    :required- for any INPUT field which CONTAINS REQUIRED ATTRIBUTE
+
+
+
             */
 
-        *
+        *             /* universal selector*/
 		{
 			/* Add CSS properties here*/
 			font-family:cursive;
 		}
 	
 	 /* Add div selector just before the curly braces*/
-		 div
+		 div            /* element selector */
 		 {
 			color:  #7868e6;
 			 font-size: 30px;
@@ -30,16 +58,49 @@
 			 text-align: center;
 		}
 	/* Add p selector just before the curly braces*/
-		p
+		p               /*element selector */
 		{
 			color: orange;
 			/*font-family:cursive; PLACED IN UNIVERSAL SELECTOR */
 			text-align: center;
 		}
+        #myhding1   /*id selector*/
+        {
+            color:green;
+        }
+        
+        input   /*  generic input element selector  */
+        {
+            color:brown;
+        }
+
+        input[type="email"] /*  attribute based input element selector  */
+        {
+		width: 100%; 
+		border: 2px solid #4535aa;
+		padding: 12px 20px;
+		margin: 8px 0px;
+        color: yellowgreen;
+		}
+
+        a:hover     /* pseudo-class selector */
+        {
+			font-weight: bold;
+			text-decoration: none;
+		}
 	</style>
 </head>
 <body>
-		<div>Sathiyanarayanan P</div>
-		<p>Our mission is to empower young Students to be the inventors and creators.</p>
+		<div>Sathiyanarayanan P is style using universal & element selector</div>
+		<p>This para is styled using universal & element selector.</p>
+        <h1 id="myhding1"> this heading1 is styled using universal & id selector</h1>
+        <hr>
+        <form>
+            <label for="name">Name</label>
+            <input type"text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </form>
+        <h1><a href="#">Sathiyanarayanan P</a><h1></h1>
 </body>
 </html>
