@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Flexbox Introduction</title>
+	<style> 
+		.flex-container{
+			display: flex; /*** step1of2 ***/
+			background-color: #4535AA;
+			padding: 10px;
+		}
+		.flex-item{
+			background-color: white;
+			margin: 20px;
+			padding: 20px;
+			flex-grow: 1; /*** step2of2 ***/
+		}
+		.flex-container1{
+			/*display: flex; /*** step1of2 ***/
+			background-color: #4535AA;
+			padding: 10px;
+		}
+		.flex-item1{
+			background-color: white;
+			margin: 20px;
+			padding: 20px;
+			/*flex-grow: 1; /*** step2of2 ***/
+		}
+	</style>
+</head>
+<body>
+	LVL15-LSN1
+	with flex
+	<div class="flex-container">
+		<div class="flex-item">Item 1</div>
+		<div class="flex-item">Item 2</div>
+		<div class="flex-item">Item 3</div>
+	</div>
+
+	<hr>
+	without flex
+	<div class="flex-container1">
+		<div class="flex-item1">Item 1</div>
+		<div class="flex-item1">Item 2</div>
+		<div class="flex-item1">Item 3</div>
+	</div>
+</body>
+</html>

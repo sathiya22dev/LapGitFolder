@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS animation timing function</title>
+	<style>
+		.box {
+			height: 150px;
+			width: 150px;
+			border-radius: 5px;
+			margin: 100px;
+			background-color:#4535AA;
+			/* use the animation property here */
+			/*animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
+			animation: ghumo 4s linear 0s 2 reverse forwards;
+		}
+
+
+		@keyframes ghumo {
+			0% { transform: rotate(0); background-color: #ED639E; }
+			100% { transform: rotate(360deg); background-color: #FFB643 }
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
