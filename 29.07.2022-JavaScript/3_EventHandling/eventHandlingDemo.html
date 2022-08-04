@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body oncontextmenu="alert('Right Click Disabled');">
+    <h1>JavaScript Event Handling - INLINE JavaScript THROUGH 'EVENT ATTRIBUTES'</h1>
+    <HR><HR></HR></HR>
+    <h1>1OF5 - mouse event</h1>
+    <ol>
+        <li>MOUSE CLICK</li>
+        <button type="button" onclick="alert('You have clicked a button!');">Click Me</button>
+        <li>MOUSE DOUBLE CLICK</li>
+        <button type="button" ondblclick="alert('You have double clicked a button!');">Click Me</button>
+        <li>MOUSE RIGHT CLICK</li>
+        <button type="button" oncontextmenu="alert('You have right clicked a button!');">Click Me</button>
+        <li>MOUSE HOVER</li>
+        <button type="button" onmouseover="alert('You have mouse(h)over(ed) a button!');">Click Me</button>
+        <li>MOUSE ENTERED</li>
+        <button type="button" onmouseenter="alert('You have mouseENTER a button!');">Click Me</button>
+        <li>MOUSE EXITED</li>
+        <button type="button" onmouseout="alert('You have mouseOUT/EXITED a button!');">Click Me</button>
+        <li>MOUSE CLICK & DRAG</li>
+        <li>MOUSE CLICK & DRAG BASED SELECTED THE TEXT/ITEMS</li>
+        <li>MOUSE DRAG AND DROP</li>
+        <li>MOUSE CLICK COMBINED WITH KEYBOARD KEYS</li>
+        <button type="button" onclick="alert('You have clicked a button!');" onkeypress="1">Click Me</button>
+    </ol>
+    <hr>
+    <h1>2OF5 - key event</h1>
+
+    <hr>
+    <h1>3OF5 - form event</h1>
+        <script>
+            function highlightInput(elm){
+                elm.style.background = "yellow";
+            }    
+        </script>
+        <input type="text" onfocus="highlightInput(this)" onblur="this.style.background='lightgreen';this.disabled=true">
+        <button type="button">Button</button>
+    <hr>
+    <h1>4OF5 - document event</h1>
+
+    <hr>
+    <h1>5OF5 - window event</h1>
+
+    <hr>
+</body>
+</html>

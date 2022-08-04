@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <button type="button" id="my_btn">Click Pannungo!</button>
+    <!-- ***PLACE SCRIPT TAG AT THE LAST INORDER TO ENABLE IT TO 
+            GET CONTROL OF ALL ELEMENTS IN THE DOCUMENT, 
+        BECAUSE..
+            IF WE PLACE THE SAME(in the following) SCRIPT AT THE "FIRST", THEN 
+                 IT MIGHT NOT BE ABLE TO FINDELEMENTBYID("??") WHICHEVER CREATED
+                 AFTER THAT LINE..***
+    -->
+    <script>
+        function myFun()
+        {
+            window.alert("Vaango! Poango!!");
+            document.getElementById("my_btn").innerText="Click Panniyaachu";
+        }
+        document.getElementById("my_btn").onclick=myFun;
+        // document.getElementById("my_btn").onclick=myFun;
+        // window.alert("Vaa111ngo! Poango!!");
+    </script>    
+</body>
+</html>

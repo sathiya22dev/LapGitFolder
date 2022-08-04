@@ -1,0 +1,12 @@
+{
+  "name": "2_jsdatatypes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "var let const.js",
+  "scripts": {
+    "start": "tsc 'classess.js' -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sathiya22dev",
+  "license": "ISC"
+}
